@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepanshu Sajwan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            color: #fff;
+            padding: 20px 0;
+            border-bottom: #77aaff 3px solid;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        .bio-data {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #77aaff;
+            position: relative;
+        }
+        .bio-data h2 {
+            text-align: center;
+            color: #333;
+            border-bottom: 2px solid #77aaff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .bio-data p, .bio-data ul {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        .bio-data ul {
+            list-style: none;
+            padding: 0;
+        }
+        .bio-data ul li {
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #77aaff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bio Data Portfolio</h1>
+            <nav>
+                <ul>
+                    
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                   
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="bio" class="bio-data">
+            <h2>Bio</h2>
+            <p><strong>Name:</strong> DEEPANSHU SAJWAN </p>
+            <p><strong>Date of Birth:</strong> 10 APRIL 2005</p>
+            <p><strong>AGE:</strong> 19 </p>
+            <p><strong>Address:</strong> BICHHU , TEHRI GARHWAL , UTTARAKHAND </p>
+            <p><strong>E-MAIL:</strong> Deepanshusajwan45@gmail.com</p>
+            <p><strong>Father's Name:</strong> MR. DEEPCHAND SINGH SAJWAN</p>
+            <p><strong>Mother's Name:</strong> MRs. VINEETA DEVI</p>
+        </section>
+
+        <section id="education" class="bio-data">
+            <h2>Education</h2>
+            <p><strong>School:</strong> kendriya vidyalaya mussoorie </p>
+            <p><strong>University:</strong> Dev Bhoomi Utarakhand University </p>
+            <p><strong>Course:</strong> BCA </p>
+            <p><strong>Year of Study:</strong> 2nd Year </p>
+        </section>
+
+        <section id="skills" class="bio-data">
+            <h2>Skills</h2>
+            <ul>
+                <li>Content writer</li>
+                <li>logo designer </li>
+                <li>Graphic designer </li>
+                <li>Video editor </li>
+                <li>Photo editor </li>
+                <li>Webpage or website designer </li>
+                <li>I have a good knoweledge of programming languages like Python , java and C</li>
+            </ul>
+        </section>
+
+        <section id="hobbies" class="bio-data">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Reading</li>
+                <li>Writing</li>
+                <li>Travelling</li>
+                <li> Tech and coding </li>
+            </ul>
+        </section>
+
+        <section id="summary" class="bio-data">
+            <h2>Summary</h2>
+            <p>I am Deepanshu Sajwan, a passionate and dedicated individual with a strong background in content writing, graphic design, and programming. Currently pursuing a BCA degree, I have developed a diverse skill set that includes logo design, video editing, and web development. I am always eager to learn and take on new challenges to further enhance my abilities.</p>
+        </section>
+
+        <section id="contact" class="bio-data">
+            <h2>Contact Information</h2>
+            <p><strong>Phone:</strong> 9368708338</p>
+            <p><strong>Email:</strong> Deepanshusajwan45@gmail.com</p>
+        </section>
+    </div>
+</body>
+</html>
+<style>
+    @media (max-width: 768px) {
+        .container {
+            width: 95%;
+        }
+        header h1 {
+            font-size: 24px;
+        }
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+        nav ul li a {
+            font-size: 18px;
+        }
+        .bio-data h2 {
+            font-size: 22px;
+        }
+        .bio-data p, .bio-data ul {
+            font-size: 16px;
+        }
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('.bio-data');
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        function animateSection(section) {
+            section.style.opacity = 0;
+            section.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+                section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                section.style.opacity = 1;
+                section.style.transform = 'translateY(0)';
+            }, 100);
+        }
+
+        sections.forEach(section => {
+            animateSection(section);
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                window.scrollTo({
+                    top: targetSection.offsetTop - 60,
+                    behavior: 'smooth'
+                });
+
+                sections.forEach(section => {
+                    section.style.opacity = 0;
+                    section.style.transform = 'translateY(20px)';
+                });
+
+                setTimeout(() => {
+                    animateSection(targetSection);
+                }, 600);
+            });
+        });
+    });
+</script>
